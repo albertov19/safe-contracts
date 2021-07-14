@@ -103,6 +103,14 @@ const userConfig: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://volta-rpc.energyweb.org`,
     },
+    moonbeamdev: {
+      ...sharedNetworkConfig,
+      url: `http://localhost:9933`,
+    },
+    moonbase: {
+      ...sharedNetworkConfig,
+      url: `https://rpc.testnet.moonbeam.network`,
+    }
   },
   namedAccounts: {
     deployer: 0,
